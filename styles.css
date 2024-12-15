@@ -131,6 +131,27 @@ h1 {
     border-radius: 5px;
 }
 
+.tech-stack ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between logos */
+}
+
+.tech-stack li {
+    display: inline-block;
+}
+
+.tech-stack img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* This ensures the image maintains its aspect ratio */
+    vertical-align: middle;
+}
+
 .project-video {
     display: block;
     margin: 0 auto 20px;
