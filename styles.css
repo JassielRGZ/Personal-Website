@@ -61,6 +61,23 @@ h1 {
     text-shadow: 1px 1px 5px rgba(0, 198, 255, 0.5);
 }
 
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #0073e6;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.github-link:hover {
+    color: #005bb5;
+    border-bottom: 2px solid #005bb5;
+}
+
+
 .pic img {
     display: block;
     margin: 20px auto;
