@@ -6,11 +6,10 @@
     <title>Jassiel Rodriguez Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Navigation -->
     <nav>
         <ul>
@@ -24,19 +23,18 @@
     <section id="about">
         <div class="glitch-wrapper">
             <div class="glitch" data-text="About Me">About Me</div>
-         </div>
-         <div class="pic">
+        </div>
+        <div class="pic">
             <img src="profile.jpg" alt="Profile Picture">
-         </div>
-        <p class="about-text">Hello! My name is Jassiel Rodriguez. I'm a passionate technology enthusiast with a focus on cybersecurity and programming. I enjoy building applications and solving problems through code. <br>
-            
-
-            <br> I have a diverse background in technology with expertise in HTML, CSS, and JavaScript. My primary programming interests include web scraping, automation, and developing graphical user interfaces.<br> 
-            <br> 
-
-Additionally, I bring a strong foundation in technical troubleshooting from my experience as a technical support specialist. I hold CompTIA A+ and Security+ certifications, and I have studied and sat for the Cisco Certified Networking Associate (CCNA) exam.
+        </div>
+        <p class="about-text">
+            Hello! My name is Jassiel Rodriguez. I'm a passionate technology enthusiast with a focus on cybersecurity and programming. 
+            I enjoy building applications and solving problems through code.<br><br>
+            I have a diverse background in technology with expertise in HTML, CSS, and JavaScript. 
+            My primary programming interests include web scraping, automation, and developing graphical user interfaces.<br><br> 
+            Additionally, I bring a strong foundation in technical troubleshooting from my experience as a technical support specialist. 
+            I hold CompTIA A+ and Security+ certifications, and I have studied and sat for the Cisco Certified Networking Associate (CCNA) exam.
         </p> 
-        
     </section>
 
     <!-- Projects Section with Tabs -->
@@ -56,8 +54,6 @@ Additionally, I bring a strong foundation in technical troubleshooting from my e
             </video>
             <h2>Interactive Campus Map Application</h2>
             <p>This program aims to display active tickets from the hospital's ticketing system on a campus map.<br> The data is exported from the ticketing system as an Excel file, and pins are placed on the map to indicate the number of pending tickets at each location.<br> This visualization helps identify high-need areas and prioritize efforts.<br> In the final version, pins will show the number of tickets at each location and be color-coded based on the average time tickets have been outstanding.</p>
-            
-            
             <a href="https://jassielrgz.github.io/Campus-Map/" target="_blank" class="github-link">View on GitHub</a>
             <div class="tech-stack">
                 <ul>
@@ -67,13 +63,11 @@ Additionally, I bring a strong foundation in technical troubleshooting from my e
                 </ul>
             </div>
         </div>
-            
-        
+
         <div id="project2" class="tabcontent">
             <img src="project3.jpg" alt="Project 3 Image" class="project-image">
             <h2>Barber Shop Website</h2>
             <p>Developed a sleek, responsive website for a barbershop, aimed at enhancing online presence and customer engagement.<br> Used HTML and CSS to create a clean, visually appealing layout. <br> Integrated JavaScript for interactive elements enhancing user experience.<br> Focused on mobile-first design to ensure accessibility and usability across all devices</p>
-
             <a href="https://jassielrgz.github.io/AOFsite/" target="_blank" class="github-link">View on GitHub</a>
             <div class="tech-stack">
                 <ul>
@@ -81,16 +75,15 @@ Additionally, I bring a strong foundation in technical troubleshooting from my e
                     <li><img src="CSS.png" alt="CSS"></li>
                     <li><img src="html.png" alt="HTML"></li>
                 </ul>
+            </div>
         </div>
-    </div>
-        
+
         <div id="project3" class="tabcontent">
             <img src="project2.jpg" alt="Project 2 Image" class="project-image">
             <h2>Active Directory Homelab</h2>
             <p>Built a homelab environment in Oracle VirtualBox, hosting Windows Server 2019 and Windows 10. <br>Set up Active Directory and established a domain, configuring DHCP on the domain controller to assign IP addresses to virtual machines.<br> Added 1,000 mock users through a script to practice user management in this simulated environment</p>
         </div>
 
-        
         <div id="project4" class="tabcontent">
             <img src="images/project4.jpg" alt="Project 4 Image">
             <h2>Project 4</h2>
@@ -114,39 +107,6 @@ Additionally, I bring a strong foundation in technical troubleshooting from my e
         </div>
     </section>
 
-    <script>
-        document.querySelectorAll('nav ul li a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Function to show selected project tab content
-        function openProject(evt, projectName) {
-            const tabcontent = document.querySelectorAll(".tabcontent");
-            const tablinks = document.querySelectorAll(".tablink");
-
-            // Hide all tab content
-            tabcontent.forEach(content => {
-                content.style.display = "none";
-            });
-
-            // Remove active class from all tab links
-            tablinks.forEach(link => {
-                link.classList.remove("active");
-            });
-
-            // Show current tab content and add active class
-            document.getElementById(projectName).style.display = "block";
-            evt.currentTarget.classList.add("active");
-        }
-
-        // Set default tab to display
-        document.getElementById("project1").style.display = "block";
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
