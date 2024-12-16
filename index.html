@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jassiel Rodriguez Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -34,8 +36,8 @@
         <h1>Projects</h1>
         <div class="tabs">
             <button class="tablink active" onclick="openProject(event, 'project1')">Interactive Map</button>
-            <button class="tablink" onclick="openProject(event, 'project2')">Active Directory Homelab</button>
-            <button class="tablink" onclick="openProject(event, 'project3')">Barber Shop Website</button>
+            <button class="tablink" onclick="openProject(event, 'project2')">Barber Shop Website</button>
+            <button class="tablink" onclick="openProject(event, 'project3')">Active Directory Homelab</button>
             <button class="tablink" onclick="openProject(event, 'project4')">Personal Website</button>
         </div>
 
@@ -56,17 +58,31 @@
                     <li><img src="html.png" alt="HTML"></li>
                 </ul>
             </div>
+        </div>
             
+        
         <div id="project2" class="tabcontent">
+            <img src="project3.jpg" alt="Project 3 Image" class="project-image">
+            <h2>Barber Shop Website</h2>
+            <p>Developed a sleek, responsive website for a barbershop, aimed at enhancing online presence and customer engagement.<br> Used HTML and CSS to create a clean, visually appealing layout. <br> Integrated JavaScript for interactive elements enhancing user experience.<br> Focused on mobile-first design to ensure accessibility and usability across all devices</p>
+
+            <a href="https://jassielrgz.github.io/AOFsite/" target="_blank" class="github-link">View on GitHub</a>
+            <div class="tech-stack">
+                <ul>
+                    <li><img src="JavaScript-logo.png" alt="JavaScript"></li>
+                    <li><img src="CSS.png" alt="CSS"></li>
+                    <li><img src="html.png" alt="HTML"></li>
+                </ul>
+        </div>
+    </div>
+        
+        <div id="project3" class="tabcontent">
             <img src="project2.jpg" alt="Project 2 Image" class="project-image">
             <h2>Active Directory Homelab</h2>
             <p>Built a homelab environment in Oracle VirtualBox, hosting Windows Server 2019 and Windows 10. <br>Set up Active Directory and established a domain, configuring DHCP on the domain controller to assign IP addresses to virtual machines.<br> Added 1,000 mock users through a script to practice user management in this simulated environment</p>
         </div>
-        <div id="project3" class="tabcontent">
-            <img src="project3.jpg" alt="Project 3 Image" class="project-image">
-            <h2>Barber Shop Website</h2>
-            <p>Developed a sleek, responsive website for a barbershop, aimed at enhancing online presence and customer engagement.<br> Used HTML and CSS to create a clean, visually appealing layout. <br> Integrated JavaScript for interactive elements enhancing user experience.<br> Focused on mobile-first design to ensure accessibility and usability across all devices</p>
-        </div>
+
+        
         <div id="project4" class="tabcontent">
             <img src="images/project4.jpg" alt="Project 4 Image">
             <h2>Project 4</h2>
