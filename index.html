@@ -42,10 +42,11 @@
         <h1>Projects</h1>
         <div class="tabs">
             <button class="tablink active" onclick="openProject(event, 'project1')">StuffStopper</button>
-            <button class="tablink" onclick="openProject(event, 'project2')">Interactive Campus Map</button>
+            <button class="tablink" onclick="openProject(event, 'project2')">Employee Master Apex</button>
             <button class="tablink" onclick="openProject(event, 'project3')">CybrCheckPro</button>
-            <button class="tablink" onclick="openProject(event, 'project4')">Active Directory Homelab</button>
-            <button class="tablink" onclick="openProject(event, 'project5')">Barber Shop Website</button>
+            <button class="tablink" onclick="openProject(event, 'project4')">Interactive Campus Map</button>
+            <button class="tablink" onclick="openProject(event, 'project5')">Active Directory Homelab</button>
+            <button class="tablink" onclick="openProject(event, 'project6')">Barber Shop Website</button>
         </div>
 
         <div id="project1" class="tabcontent">
@@ -65,6 +66,34 @@
         </div>
 
         <div id="project2" class="tabcontent">
+            <!-- Replace this placeholder with:
+                 <img src="employee-master-apex.jpg" alt="Employee Master Apex interface" class="project-image">
+                 once your project image is ready. -->
+            <div class="project-image-placeholder" role="img" aria-label="Employee Master Apex project image coming soon">
+                <span>Employee Master Apex</span>
+                <small>Project image coming soon</small>
+            </div>
+            <h2>Employee Master Apex — Identity &amp; Access Management Tool</h2>
+            <p>Employee Master Apex is a Python-based identity management application that helps reconcile HR and physician roster data against Active Directory. It identifies account and attribute discrepancies, supports structured account provisioning for different worker classifications, and checks username uniqueness before account creation. The tool is designed to reduce manual IAM administration and improve account lifecycle consistency.</p>
+            <div class="tech-stack">
+                <ul>
+                    <li><img src="python.png" alt="Python"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project3" class="tabcontent">
+            <img src="project2.png" alt="Project 3 Image" class="project-image">
+            <h2>CybrCheckPro - Website validation tool</h2>
+            <p>CybrCheckPro is a Python-based program designed to validate URLs by leveraging multiple security resources, including VirusTotal, Google Safe Browsing, WHOIS, and AbuseIPDB. When a user enters a URL and clicks the "Validate" button, the program scans the website across these platforms and displays the results. This provides a quick and comprehensive assessment to help determine whether a website is safe.</p>
+            <div class="tech-stack">
+                <ul>
+                    <li><img src="python.png" alt="python"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project4" class="tabcontent">
             <video controls class="project-video">
                 <source src="Screenrec.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -80,26 +109,14 @@
                 </ul>
             </div>
         </div>
-        
-        
-        <div id="project3" class="tabcontent">
-            <img src="project2.png" alt="Project 3 Image" class="project-image">
-            <h2>CybrCheckPro - Website validation tool</h2>
-            <p>CybrCheckPro is a Python-based program designed to validate URLs by leveraging multiple security resources, including VirusTotal, Google Safe Browsing, WHOIS, and AbuseIPDB. When a user enters a URL and clicks the "Validate" button, the program scans the website across these platforms and displays the results. This provides a quick and comprehensive assessment to help determine whether a website is safe.</p>
-            <div class="tech-stack">
-                <ul>
-                    <li><img src="python.png" alt="python"></li>
-                </ul>
-            </div>
-        </div>
 
-        <div id="project4" class="tabcontent">
+        <div id="project5" class="tabcontent">
             <img src="project3.jpg" alt="Project 4 Image" class="project-image">
             <h2>Active Directory Homelab</h2>
             <p>Built a homelab environment in Oracle VirtualBox, hosting Windows Server 2019 and Windows 10. <br>Set up Active Directory and established a domain, configuring DHCP on the domain controller to assign IP addresses to virtual machines.<br> Added 1,000 mock users through a script to practice user management in this simulated environment</p>
         </div>
 
-        <div id="project5" class="tabcontent">
+        <div id="project6" class="tabcontent">
             <img src="project4.jpg" alt="Project 5 Image" class="project-image">
             <h2>Barber Shop Website</h2>
             <p>Developed a sleek, responsive website for a barbershop, aimed at enhancing online presence and customer engagement.<br> Used HTML and CSS to create a clean, visually appealing layout. <br> Integrated JavaScript for interactive elements enhancing user experience.<br> Focused on mobile-first design to ensure accessibility and usability across all devices</p>
