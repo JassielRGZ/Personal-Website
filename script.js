@@ -31,4 +31,16 @@ function openProject(evt, projectName) {
 // Set default tab to display
 document.getElementById("project1").style.display = "block";
 
+// Stop other videos when one starts playing
+const videos = document.querySelectorAll('video');
+videos.forEach(video => {
+    video.addEventListener('play', () => {
+        videos.forEach(otherVideo => {
+            if (otherVideo !== video) {
+                otherVideo.pause();
+            }
+        });
+    });
+});
+
 
